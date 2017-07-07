@@ -1,0 +1,29 @@
+[ 2017-07-06T11:27:20+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `onethink_hooks` [ RunTime:0.0120s ]
+SQL: SELECT `name`,`addons` FROM `onethink_hooks`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_addons` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`name` FROM `onethink_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name` FROM `onethink_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name` FROM `onethink_addons` WHERE `status` = 1 AND `name` IN ('Attachment','SocialComment')  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name` FROM `onethink_addons` WHERE `status` = 1 AND `name` IN ('Attachment')  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `onethink_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `onethink_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `onethink_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name` FROM `onethink_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.064003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.065003s ]
+
+[ 2017-07-06T11:27:20+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-07-06T21:50:50+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.040002s ]
+INFO: [ app_init ] --END-- [ RunTime:0.054003s ]
+
