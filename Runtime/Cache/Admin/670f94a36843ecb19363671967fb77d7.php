@@ -131,7 +131,7 @@
 				<div class="form-item cf">
 					<label class="item-label">截止日期：</label>
 					<div class="controls">
-					<input type="text" class="text time" name="end_time" value="<?php echo ((isset($info["end_time"]) && ($info["end_time"] !== ""))?($info["end_time"]):''); ?>"></div>
+					<input type="datetime-local" class="text time" name="end_time" value="<?php echo ((isset($info["end_time"]) && ($info["end_time"] !== ""))?($info["end_time"]):''); ?>"></div>
 				</div>
 
 		</div>

@@ -12,7 +12,9 @@
  * 所有系统级别的配置
  */
 return array(
+    'HTML_FILE_SUFFIX' => '.html',// 默认静态文件后缀
     /* 模块相关配置 */
+    'SHOW_PAGE_TRACE' =>true,
     'AUTOLOAD_NAMESPACE' => array('Addons' => ONETHINK_ADDON_PATH), //扩展模块列表
     'DEFAULT_MODULE'     => 'Home',
     'MODULE_DENY_LIST'   => array('Common','User','Admin','Install'),

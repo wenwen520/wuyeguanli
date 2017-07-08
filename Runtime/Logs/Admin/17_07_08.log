@@ -1,0 +1,78 @@
+[ 2017-07-08T10:40:15+08:00 ] 127.0.0.1 /admin.php?s=/Category/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_category` WHERE `name` = 'www' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for arr2str() D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] json_encode() expects at least 1 parameter, 0 given D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: INSERT INTO `onethink_category` (`title`,`name`,`groups`,`allow_publish`,`check`,`type`,`model`,`model_sub`,`icon`,`display`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`id`,`pid`,`create_time`,`update_time`,`status`) VALUES ('商家活动','www','商家活动','2','0','2','2','2','0','1','0','10','','商家活动','商家活动','','','','','0','39','1499481615','1499481615','1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_category' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('11','1','2130706433','category','41','1499481615','操作url：/admin.php?s=/Category/add.html') [ RunTime:0.0020s ]
+
+[ 2017-07-08T10:41:58+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0100s ]
+NOTIC: [2] call_user_func_array() expects parameter 1 to be a valid callback, function 'check_catgory_model' not found or invalid function name D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1420 行.
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.0110s ]
+SQL: SELECT `check` FROM `onethink_category` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `onethink_document` (`title`,`name`,`description`,`type`,`display`,`level`,`cover_id`,`view`,`comment`,`create_time`,`link_id`,`id`,`pid`,`model_id`,`group_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('买牛奶送鸡蛋','','','2','1','0','0','0','0','1499481718','0','0','0','2','0','41','1','0','0','0','1499481718','3','0') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_document_article` [ RunTime:0.0090s ]
+SQL: INSERT INTO `onethink_document_article` (`content`,`parse`,`bookmark`,`template`,`id`) VALUES ('<img src=\"/Uploads/Editor/2017-07-08/5960466f45aa6.png\" alt=\"\" />','0','0','','6') [ RunTime:0.0010s ]
+
+[ 2017-07-08T10:42:48+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0120s ]
+SQL: SELECT `status` FROM `onethink_document` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `onethink_document` SET `title`='买牛奶送鸡蛋',`name`='',`description`='买牛奶送鸡蛋',`type`='2',`display`='1',`level`='0',`cover_id`='0',`view`='0',`comment`='0',`create_time`='1499481600',`deadline`='1500086400',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='41',`root`='0',`update_time`='1499481768',`status`='1',`position`='0' WHERE `id` = 6 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_document_article` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `onethink_model` [ RunTime:0.0100s ]
+SQL: SELECT `extend` FROM `onethink_model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_attribute` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `onethink_attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: id D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `onethink_document_article` SET `content`='<img src=\"/Uploads/Editor/2017-07-08/5960466f45aa6.png\" alt=\"\" />',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 6 [ RunTime:0.0000s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.001000s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-08T10:42:59+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0100s ]
+SQL: SELECT `status` FROM `onethink_document` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_document` SET `title`='买牛奶送鸡蛋',`name`='',`description`='买牛奶送鸡蛋',`type`='2',`display`='1',`level`='0',`cover_id`='5',`view`='0',`comment`='0',`create_time`='1499481600',`deadline`='1500086400',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='41',`root`='0',`update_time`='1499481779',`status`='1',`position`='0' WHERE `id` = 6 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_document_article` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `onethink_model` [ RunTime:0.0100s ]
+SQL: SELECT `extend` FROM `onethink_model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_attribute` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `onethink_attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: id D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `onethink_document_article` SET `content`='<img src=\"/Uploads/Editor/2017-07-08/5960466f45aa6.png\" alt=\"\" />',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 6 [ RunTime:0.0000s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.002000s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: id D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+

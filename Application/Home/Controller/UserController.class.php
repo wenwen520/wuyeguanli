@@ -83,6 +83,7 @@ class UserController extends HomeController {
 			}
 
 		} else { //显示登录表单
+
 			$this->display();
 		}
 	}

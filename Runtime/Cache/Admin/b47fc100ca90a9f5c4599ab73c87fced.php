@@ -131,6 +131,13 @@
 							<a class="confirm ajax-get" title="删除" href="<?php echo U('del?id='.$rental['id']);?>">删除</a>
 						</td>
 					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+					<tr>
+						<td align="right" nowrap="true" colspan="6">
+							<div id="turn-page" class="page">
+								<?php echo ($page); ?>
+							</div>
+						</td>
+					</tr>
 				<?php else: ?>
 				<td colspan="6" class="text-center"> aOh! 暂时还没有内容! </td><?php endif; ?>
 			</tbody>
@@ -150,7 +157,7 @@
     (function(){
         var ThinkPHP = window.Think = {
             "ROOT"   : "", //当前网站地址
-            "APP"    : "/index.php?s=", //当前项目地址
+            "APP"    : "/admin.php?s=", //当前项目地址
             "PUBLIC" : "/Public", //项目公共目录地址
             "DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
             "MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],

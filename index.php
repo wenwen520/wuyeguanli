@@ -13,6 +13,7 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
  * 系统调试设置
  * 项目正式部署后请设置为false
  */
+define('HTML_PATH', './HTML/');//生成静态页面的文件位置
 define('APP_DEBUG', true );
 
 /**
