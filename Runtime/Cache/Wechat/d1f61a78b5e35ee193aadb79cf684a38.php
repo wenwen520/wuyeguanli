@@ -8,8 +8,8 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="Public/Wechat/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="Public/Wechat/css/style.css" rel="stylesheet">
+    <link href="/Public/Wechat/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Public/Wechat/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,22 +45,22 @@
 
     <div class="container-fluid">
         <?php if(is_array($notice)): $i = 0; $__LIST__ = $notice;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$notice): $mod = ($i % 2 );++$i;?><div class="row noticeList">
-            <a href="<?php echo U('Wechat/notice_detail?notice_id='.$notice['id']);?>">
+            <a href="<?php echo U('Wechat/notice_detail',array('notice_id'=>$notice['id'],'view'=>$notice['view']));?>">
             <div class="col-xs-2">
                <img src="<?php echo ($notice["path"]); ?>">
             </div>
             <div class="col-xs-10">
                 <p class="title"><?php echo ($notice["title"]); ?></p>
                 <p class="intro"><?php echo ($notice["description"]); ?></p>
-                <p class="info">浏览: 199 <span class="pull-right"><?php echo date('Y-m-d G:i:s',$notice['create_time']);?></span> </p>
+                <p class="info">浏览: <?php echo ($notice["view"]); ?> <span class="pull-right"><?php echo date('Y-m-d G:i:s',$notice['create_time']);?></span> </p>
             </div>
             </a>
         </div><?php endforeach; endif; else: echo "" ;endif; ?>
             </volist>
     </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="Public/Wechat/jquery-1.11.2.min.js"></script>
+<script src="/Public/Wechat/jquery-1.11.2.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="Public/Wechat/bootstrap/js/bootstrap.min.js"></script>
+<script src="/Public/Wechat/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

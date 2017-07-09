@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
@@ -44,15 +44,20 @@
     <!--导航结束-->
 
     <div class="container-fluid">
-        <div class="blank"></div>
-        <h3 class="noticeDetailTitle"><strong>{$document.title}</strong></h3>
-        <div class="noticeDetailInfo">发布者:{$document.name}</div>
-        <div class="noticeDetailInfo">发布时间{:date('Y-m-d G:i:s',$document['create_time'])}</div>
-        <div class="noticeDetailContent">
-            {$notice['content']}
-        </div>
+        <?php if(is_array($shop)): $i = 0; $__LIST__ = $shop;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$shop): $mod = ($i % 2 );++$i;?><div class="row noticeList">
+            <a href="<?php echo U('Wechat/shop_detail?shop_id='.$shop['id']);?>">
+            <div class="col-xs-2">
+               <img src="<?php echo ($shop["path"]); ?>">
+            </div>
+            <div class="col-xs-10">
+                <p class="title"><?php echo ($shop["title"]); ?></p>
+                <p class="intro"><?php echo ($shop["description"]); ?></p>
+                <p class="info">浏览: 199 <span class="pull-right"><?php echo date('Y-m-d G:i:s',$shop['create_time']);?></span> </p>
+            </div>
+            </a>
+        </div><?php endforeach; endif; else: echo "" ;endif; ?>
+
     </div>
-</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="/Public/Wechat/jquery-1.11.2.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

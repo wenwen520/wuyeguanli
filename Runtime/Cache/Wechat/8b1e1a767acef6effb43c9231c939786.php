@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
@@ -45,11 +45,11 @@
 
     <div class="container-fluid">
         <div class="blank"></div>
-        <h3 class="noticeDetailTitle"><strong>{$document.title}</strong></h3>
-        <div class="noticeDetailInfo">发布者:{$document.name}</div>
-        <div class="noticeDetailInfo">发布时间{:date('Y-m-d G:i:s',$document['create_time'])}</div>
+        <h3 class="noticeDetailTitle"><strong><?php echo ($service["title"]); ?></strong></h3>
+        <div class="noticeDetailInfo">发布者:<?php echo ($service["name"]); ?></div>
+        <div class="noticeDetailInfo">发布时间<?php echo date('Y-m-d G:i:s',$service['create_time']);?></div>
         <div class="noticeDetailContent">
-            {$notice['content']}
+            <?php echo ($detail['content']); ?>
         </div>
     </div>
 </div>
