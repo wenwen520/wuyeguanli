@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
@@ -8,8 +8,8 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="/Public/Wechat/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Public/Wechat/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,18 +44,22 @@
     <!--导航结束-->
 
     <div class="container-fluid">
-        <div class="blank"></div>
-        <h3 class="noticeDetailTitle"><strong>小区通知标题</strong></h3>
-        <div class="noticeDetailInfo">发布者:XXX小区物管</div>
-        <div class="noticeDetailInfo">发布时间：2016-05-16</div>
-        <div class="noticeDetailContent">
-            破的肌肤破大概破地方不就行破风格放假哦跑哦粉红if偶发念佛I覅哦佛你发个ion佛念佛I弄佛I覅哦你哦I广佛I佛I给你发偶发能够I弄佛I你发
-        </div>
+        <?php if(is_array($activity)): $i = 0; $__LIST__ = $activity;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$activity): $mod = ($i % 2 );++$i;?><div class="row noticeList">
+            <a href="<?php echo U('Wechat/xqhd_detail',array('xqhd_id'=>$activity['id'],'view'=>$activity['view']));?>">
+                <div class="col-xs-2">
+               <img src="<?php echo ($activity["path"]); ?>">
+            </div>
+            <div class="col-xs-10">
+                <p class="title"><?php echo ($activity["title"]); ?></p>
+                <p class="intro"><?php echo ($activity["description"]); ?></p>
+                <p class="info">浏览:<?php echo ($activity["view"]); ?> <span class="pull-right"><?php echo date('Y-m-d G:i:s',$activity['create_time']);?></span> </p>
+            </div>
+            </a>
+        </div><?php endforeach; endif; else: echo "" ;endif; ?>
     </div>
-</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="../jquery-1.11.2.min.js"></script>
+<script src="/Public/Wechat/jquery-1.11.2.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="/Public/Wechat/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -51,6 +51,9 @@ class WechatController extends Controller{
 
     }
 
+
+
+
 //    //小区通知详情
     public function notice_detail($notice_id,$view){
         $model=M('document');
@@ -65,12 +68,25 @@ class WechatController extends Controller{
 
     //商家活动
     public function shop_activity(){
-
         $Model=M('document');
+       if($p=I('get.p')){
+           $shop1=$Model
+               ->join('onethink_picture ON onethink_document.cover_id=onethink_picture.id')
+               ->join('onethink_document_article ON onethink_document_article.id=onethink_document.id')->limit($p,1)
+               ->where('category_id=41 AND deadline>'.time())
+               ->select();
+
+           if($shop1!=null){
+               $this->ajaxReturn($shop1);
+           }else{
+               $this->ajaxReturn();
+           }
+       }
+
         $shop=$Model
             ->join('onethink_picture ON onethink_document.cover_id=onethink_picture.id')
-            ->join('onethink_document_article ON onethink_document_article.id=onethink_document.id')
-            ->where('category_id=41 AND deadline<'.time())
+            ->join('onethink_document_article ON onethink_document_article.id=onethink_document.id')->limit(0,1)
+            ->where('category_id=41 AND deadline>'.time())
             ->select();
         $this->assign('shop',$shop);
         $this->display('shop_activity');
@@ -109,5 +125,30 @@ class WechatController extends Controller{
         $this->display('service_detail');
     }
 
+    //小区活动
+    public function community_activity(){
+        $Model=M('document');
+        $activity = $Model
+            ->join('onethink_picture ON onethink_document.cover_id = onethink_picture.id')
+            ->join('onethink_document_article ON onethink_document_article.id=onethink_document.id')
+            ->where('category_id=43')
+            ->select();
+//        dump($activity);exit;
+        $this->assign('activity',$activity);
+        $this->display('community_activity');
+    }
+
+
+    //小区活动详情
+    public function xqhd_detail($xqhd_id,$view){
+        $Model=M('document');
+        $document=$Model->where('id='.$xqhd_id)->find();
+        $article=M('document_article')->find($xqhd_id);
+        $this->assign('document',$document);
+        $this->assign('article',$article);
+        $Model->where('id='.$xqhd_id)->save(['view'=>$view+1]);
+        $this->display('xqhd_detail');
+
+    }
 
 }

@@ -1,0 +1,426 @@
+[ 2017-07-09T15:42:45+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/paste.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T15:42:50+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/copy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T15:42:53+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/copy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T15:50:45+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_category` WHERE `name` = 'active' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for arr2str() D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] json_encode() expects at least 1 parameter, 0 given D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: INSERT INTO `onethink_category` (`title`,`name`,`groups`,`allow_publish`,`check`,`type`,`model`,`model_sub`,`icon`,`display`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`id`,`pid`,`create_time`,`update_time`,`status`) VALUES ('小区活动','active','','1','0','2','2','2','0','1','0','10','','小区活动','小区活动','','','','','0','39','1499586645','1499586645','1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_category' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0100s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('11','1','2130706433','category','43','1499586645','操作url：/index.php?s=/Admin/Category/add.html') [ RunTime:0.0000s ]
+
+[ 2017-07-09T15:51:55+08:00 ] 127.0.0.1 /index.php?s=/Admin/article/autoSave.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_document` WHERE `name` = 'active' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] call_user_func_array() expects parameter 1 to be a valid callback, function 'check_catgory_model' not found or invalid function name D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1420 行.
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.0080s ]
+SQL: SELECT `check` FROM `onethink_category` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `onethink_document` (`title`,`name`,`description`,`type`,`display`,`level`,`cover_id`,`view`,`comment`,`create_time`,`link_id`,`id`,`pid`,`model_id`,`group_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('相遇是缘 相知是份','active','有缘千里来相会  无缘对面手难牵','2','1','0','0','0','0','1499586715','0','0','0','2','0','43','1','0','0','0','1499586715','3','0') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_document_article` [ RunTime:0.0070s ]
+SQL: INSERT INTO `onethink_document_article` (`content`,`parse`,`bookmark`,`template`,`id`) VALUES ('<img src=\"/Uploads/Editor/2017-07-09/5961e07fb6d98.png\" alt=\"\" />','0','0','','9') [ RunTime:0.0010s ]
+
+[ 2017-07-09T15:52:16+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/update.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`title`,`pid` FROM `onethink_category` WHERE `status` = 1 ORDER BY `sort`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `onethink_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE `status` > -1 ORDER BY `sort`  [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `onethink_document` WHERE `name` = 'active' AND `id` <> '9' AND `status` <> -1 AND `category_id` IN ('39','40','41','42','43') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `status` FROM `onethink_document` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `onethink_document` SET `title`='相遇是缘 相知是份',`name`='active',`description`='有缘千里来相会  无缘对面手难牵',`type`='2',`display`='1',`level`='0',`cover_id`='9',`view`='0',`comment`='0',`create_time`='1499589600',`deadline`='1501228200',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='43',`root`='0',`update_time`='1499586736',`status`='1',`position`='0' WHERE `id` = 9 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `onethink_document_article` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `onethink_model` [ RunTime:0.0150s ]
+SQL: SELECT `extend` FROM `onethink_model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_attribute` [ RunTime:0.0140s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `onethink_attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: id D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `onethink_document_article` SET `content`='<img src=\"/Uploads/Editor/2017-07-09/5961e07fb6d98.png\" alt=\"\" />',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 9 [ RunTime:0.0010s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.016001s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.016001s ]
+NOTIC: [8] Undefined variable: id D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-09T17:03:22+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0090s ]
+
+[ 2017-07-09T17:03:45+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_menu` (`title`,`sort`,`url`,`pid`,`group`,`hide`,`is_dev`,`tip`,`id`,`status`) VALUES ('小区活动','0','Wechat/community_activity','124','管理中心','0','0','','0','1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0100s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','128','1499591025','操作url：/index.php?s=/Admin/Menu/add.html') [ RunTime:0.0010s ]
+
+[ 2017-07-09T17:03:51+08:00 ] 127.0.0.1 /index.php?s=/Admin/Wechat/community_activity.html
+ERR: 无法加载控制器:Wechat
+
+[ 2017-07-09T17:04:15+08:00 ] 127.0.0.1 /index.php?s=/Admin/Wechat/community_activity.html
+ERR: 无法加载控制器:Wechat
+
+[ 2017-07-09T17:04:20+08:00 ] 127.0.0.1 /index.php?s=/Admin/Wechat/community_activity.html
+ERR: 无法加载控制器:Wechat
+
+[ 2017-07-09T17:04:29+08:00 ] 127.0.0.1 /index.php?s=/Admin/Wechat/community_activity.html
+ERR: 无法加载控制器:Wechat
+
+[ 2017-07-09T17:05:25+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0090s ]
+SQL: UPDATE `onethink_menu` SET `title`='小区活动',`sort`='0',`url`='Rental/community_activity',`pid`='124',`group`='管理中心',`hide`='0',`is_dev`='0',`tip`='' WHERE `id` = 128 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0110s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','128','1499591125','操作url：/index.php?s=/Admin/Menu/edit.html') [ RunTime:0.0010s ]
+
+[ 2017-07-09T17:05:28+08:00 ] 127.0.0.1 /index.php?s=/Admin/Rental/community_activity.html
+ERR: 模板不存在:./Application/Admin/View/Rental/community_activity.html
+
+[ 2017-07-09T17:14:08+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0090s ]
+SQL: UPDATE `onethink_menu` SET `title`='小区活动',`sort`='0',`url`='Xqhd/community_activity',`pid`='124',`group`='管理中心',`hide`='0',`is_dev`='0',`tip`='' WHERE `id` = 128 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0110s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','128','1499591648','操作url：/index.php?s=/Admin/Menu/edit.html') [ RunTime:0.0010s ]
+
+[ 2017-07-09T17:14:21+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0080s ]
+SQL: UPDATE `onethink_menu` SET `title`='小区活动',`sort`='0',`url`='Xqhd/community_activity',`pid`='124',`group`='管理中心',`hide`='0',`is_dev`='0',`tip`='' WHERE `id` = 128 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0070s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','128','1499591661','操作url：/index.php?s=/Admin/Menu/edit.html') [ RunTime:0.0000s ]
+
+[ 2017-07-09T17:14:37+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0090s ]
+SQL: UPDATE `onethink_menu` SET `title`='小区活动',`sort`='0',`url`='Xqhd/community_activity',`pid`='124',`group`='管理中心',`hide`='0',`is_dev`='0',`tip`='' WHERE `id` = 128 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','128','1499591676','操作url：/index.php?s=/Admin/Menu/edit.html') [ RunTime:0.0020s ]
+
+[ 2017-07-09T17:14:41+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0090s ]
+SQL: UPDATE `onethink_menu` SET `title`='小区租售',`sort`='1',`url`='Rental/index',`pid`='124',`group`='管理中心',`hide`='0',`is_dev`='0',`tip`='' WHERE `id` = 125 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','125','1499591681','操作url：/index.php?s=/Admin/Menu/edit.html') [ RunTime:0.0000s ]
+
+[ 2017-07-09T17:21:01+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/community_activity.html
+ERR: 1054:Unknown column 'caregory_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `onethink_document` WHERE ( caregory_id=42 ) 
+
+[ 2017-07-09T17:28:52+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/release/id/9.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE (  id=9 ) AND (  id=9 )' at line 1
+ [ SQL语句 ] : UPDATE `onethink_document` SET  WHERE (  id=9 ) AND (  id=9 )
+
+[ 2017-07-09T17:30:47+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/release/id/9.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE (  id=9 )' at line 1
+ [ SQL语句 ] : UPDATE `onethink_document` SET  WHERE (  id=9 )
+
+[ 2017-07-09T17:30:48+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/release/id/9.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE (  id=9 )' at line 1
+ [ SQL语句 ] : UPDATE `onethink_document` SET  WHERE (  id=9 )
+
+[ 2017-07-09T17:30:48+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/release/id/9.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE (  id=9 )' at line 1
+ [ SQL语句 ] : UPDATE `onethink_document` SET  WHERE (  id=9 )
+
+[ 2017-07-09T17:44:19+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/release/id/9.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_document` WHERE (  id=9 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `onethink_document` SET `status`='2' WHERE (  id=9 ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: meta_title D:\server\apache\htdocs\onethink-master\wwwroot\Runtime\Cache\Admin\016cd1268bf46bfad53129da53ae3c90.php 第 5 行.
+NOTIC: [8] Undefined variable: __MENU__ D:\server\apache\htdocs\onethink-master\wwwroot\Runtime\Cache\Admin\016cd1268bf46bfad53129da53ae3c90.php 第 29 行.
+NOTIC: [8] Undefined variable: __MENU__ D:\server\apache\htdocs\onethink-master\wwwroot\Runtime\Cache\Admin\016cd1268bf46bfad53129da53ae3c90.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T17:44:52+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/release/id/9.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `onethink_document` WHERE (  id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_document` SET `status`='2' WHERE (  id=9 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T17:45:35+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/add.html
+ERR: 非法操作:add
+
+[ 2017-07-09T18:01:37+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499594497','Administrator在2017-07-09 18:01登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499508097 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499594497',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0000s ]
+
+[ 2017-07-09T18:01:49+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0130s ]
+NOTIC: [2] Illegal string offset 'pid' D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 192 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 192 行.
+SQL: SELECT `id` FROM `onethink_document` WHERE `name` = 'zzz' AND `id` <> '' AND `status` <> -1 AND `category_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: level D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1340 行.
+NOTIC: [8] Undefined index: category_id D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1454 行.
+
+[ 2017-07-09T18:04:59+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0100s ]
+NOTIC: [2] Illegal string offset 'pid' D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 192 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 192 行.
+SQL: SELECT `id` FROM `onethink_document` WHERE `name` = 'zzz' AND `id` <> '' AND `status` <> -1 AND `category_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: level D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1340 行.
+NOTIC: [8] Undefined index: category_id D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1454 行.
+
+[ 2017-07-09T18:05:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+
+[ 2017-07-09T18:05:15+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+NOTIC: [2] Illegal string offset 'pid' D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 192 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 192 行.
+SQL: SELECT `id` FROM `onethink_document` WHERE `name` = 'zzzz' AND `id` <> '' AND `status` <> -1 AND `category_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: level D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1340 行.
+NOTIC: [8] Undefined index: category_id D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1454 行.
+
+[ 2017-07-09T18:06:13+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0100s ]
+NOTIC: [2] Illegal string offset 'pid' D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 192 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 192 行.
+SQL: SELECT `id` FROM `onethink_document` WHERE `name` = 'zzz' AND `id` <> '' AND `status` <> -1 AND `category_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: level D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1340 行.
+NOTIC: [8] Undefined index: category_id D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1454 行.
+
+[ 2017-07-09T18:07:39+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0130s ]
+NOTIC: [2] Illegal string offset 'pid' D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 192 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 192 行.
+SQL: SELECT `id` FROM `onethink_document` WHERE `name` = 'zzz' AND `id` <> '' AND `status` <> -1 AND `category_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: level D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1340 行.
+NOTIC: [8] Undefined index: category_id D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1454 行.
+
+[ 2017-07-09T18:08:05+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+NOTIC: [2] Illegal string offset 'pid' D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 192 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 192 行.
+SQL: SELECT `id` FROM `onethink_document` WHERE `name` = 'zzz' AND `id` <> '' AND `status` <> -1 AND `category_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: level D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1340 行.
+NOTIC: [8] Undefined index: category_id D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1454 行.
+
+[ 2017-07-09T18:08:09+08:00 ] 127.0.0.1 /index.php?s=/Admin/Xqhd/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0200s ]
+NOTIC: [2] Illegal string offset 'pid' D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 192 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 192 行.
+SQL: SELECT `id` FROM `onethink_document` WHERE `name` = 'zzz' AND `id` <> '' AND `status` <> -1 AND `category_id` = 0 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: level D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1340 行.
+NOTIC: [8] Undefined index: category_id D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1454 行.
+
+[ 2017-07-09T21:37:49+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0110s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0130s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499607469','Administrator在2017-07-09 21:37登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499521069 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499607469',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0020s ]
+
+[ 2017-07-09T21:40:34+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0080s ]
+SQL: UPDATE `onethink_menu` SET `title`='活动管理',`sort`='0',`url`='Xqhd/community_activity',`pid`='124',`group`='管理中心',`hide`='0',`is_dev`='0',`tip`='' WHERE `id` = 128 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0100s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','128','1499607633','操作url：/index.php?s=/Admin/Menu/edit.html') [ RunTime:0.0010s ]
+
+[ 2017-07-09T21:51:44+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/del/id/128.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0150s ]
+SQL: DELETE FROM `onethink_menu` WHERE `id` IN ('128') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0120s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','1499608304','操作url：/index.php?s=/Admin/Menu/del/id/128.html') [ RunTime:0.0010s ]
+
+[ 2017-07-09T22:03:25+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0110s ]
+SQL: INSERT INTO `onethink_menu` (`title`,`sort`,`url`,`pid`,`group`,`hide`,`is_dev`,`tip`,`id`,`status`) VALUES ('活动管理','0','Active/active','124','','0','0','','0','1') [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0100s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','129','1499609005','操作url：/index.php?s=/Admin/Menu/add.html') [ RunTime:0.0010s ]
+
+[ 2017-07-09T22:03:42+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0090s ]
+SQL: UPDATE `onethink_menu` SET `title`='活动管理',`sort`='0',`url`='Active/active',`pid`='124',`group`='',`hide`='0',`is_dev`='0',`tip`='' WHERE `id` = 129 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','129','1499609022','操作url：/index.php?s=/Admin/Menu/edit.html') [ RunTime:0.0000s ]
+
+[ 2017-07-09T22:03:59+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0100s ]
+SQL: UPDATE `onethink_menu` SET `title`='活动管理',`sort`='0',`url`='Active/active',`pid`='124',`group`='管理中心',`hide`='0',`is_dev`='0',`tip`='' WHERE `id` = 129 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','129','1499609039','操作url：/index.php?s=/Admin/Menu/edit.html') [ RunTime:0.0010s ]
+
+[ 2017-07-09T22:08:39+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0090s ]
+SQL: UPDATE `onethink_menu` SET `title`='活动管理',`sort`='0',`url`='Active/index',`pid`='124',`group`='管理中心',`hide`='0',`is_dev`='0',`tip`='' WHERE `id` = 129 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','129','1499609319','操作url：/index.php?s=/Admin/Menu/edit.html') [ RunTime:0.0010s ]
+
+[ 2017-07-09T22:31:36+08:00 ] 127.0.0.1 /index.php?s=/Admin/Menu/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0120s ]
+SQL: UPDATE `onethink_menu` SET `title`='活动管理',`sort`='2',`url`='Active/index',`pid`='124',`group`='管理中心',`hide`='0',`is_dev`='0',`tip`='' WHERE `id` = 129 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0130s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','129','1499610696','操作url：/index.php?s=/Admin/Menu/edit.html') [ RunTime:0.0010s ]
+
+[ 2017-07-09T22:39:01+08:00 ] 127.0.0.1 /index.php?s=/Admin/Active/edit.html
+ERR: 非法操作:edit
+
+[ 2017-07-09T23:30:40+08:00 ] 127.0.0.1 /index.php?s=/Admin/Login/login.html
+ERR: 无法加载控制器:Login
+
+[ 2017-07-09T23:33:54+08:00 ] 127.0.0.1 /index.php?s=/Admin/Login/login.html
+ERR: 无法加载控制器:Login
+
+[ 2017-07-09T23:33:59+08:00 ] 127.0.0.1 /index.php?s=/Admin/Member/login.html
+ERR: 无法加载控制器:Member
+
+[ 2017-07-09T23:34:21+08:00 ] 127.0.0.1 /index.php?s=/Admin/Member/login.html
+ERR: 无法加载控制器:Member
+

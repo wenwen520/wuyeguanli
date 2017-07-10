@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>在线报修</title>
+    <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="/Public/Wechat/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Public/Wechat/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,40 +44,19 @@
     <!--导航结束-->
 
     <div class="container-fluid">
-        <form>
-            <div class="form-group">
-                <label>您的姓名(必填):</label>
-                <input type="text" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label>您的电话(必填):</label>
-                <input type="text" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label>您的地址(必填):</label>
-                <input type="text" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label>标题(必填):</label>
-                <input type="text" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label>内容(详细描述需要报修的内容):</label>
-                <textarea type="text" class="form-control"></textarea>
-            </div>
-            <!--<div class="form-group">-->
-                <!--<div><a href="#"><span class="glyphicon glyphicon-plus onlineUpImg"></span></a></div>-->
-                <!--<label>图片(最多上传5张,可不上传):</label>-->
-            <!--</div>-->
-            <div class="form-group">
-                <button class="btn btn-primary onlineBtn">确认提交</button>
-            </div>
-        </form>
+        <div class="blank"></div>
+        <h3 class="noticeDetailTitle"><strong><?php echo ($document["title"]); ?></strong></h3>
+        <div class="noticeDetailInfo">发布者:<?php echo ($document["name"]); ?></div>
+        <div class="noticeDetailInfo">发布时间<?php echo date('Y-m-d G:i:s',$document['create_time']);?></div>
+        <div class="noticeDetailInfo"><a href="<?php echo U('Admin/active/active?active_id='.$document['id']);?>">申请参加活动</a></div>
+        <div class="noticeDetailContent">
+            <?php echo ($article['content']); ?>
+        </div>
     </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="../jquery-1.11.2.min.js"></script>
+<script src="/Public/Wechat/jquery-1.11.2.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="/Public/Wechat/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

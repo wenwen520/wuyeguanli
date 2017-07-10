@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
@@ -8,8 +8,8 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="/Public/Wechat/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Public/Wechat/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,10 +47,10 @@
         <div class="blank"></div>
         <div class="row">
             <div class="col-xs-3">
-                <img src="../image/5.png" width="60" height="60" />
+                <img src="/Public/Wechat/image/5.png" width="60" height="60" />
             </div>
             <div class="col-xs-9">
-                ZhangSan<br/>
+                <?php echo ($info["nickname"]); ?><br/>
                 北大花园小区<br/>
                 积分:<span class="text-danger">100</span>
             </div>
@@ -58,22 +58,21 @@
         <div class="blank"></div>
         <div class="row text-center myLabel">
             <div class="col-xs-4 label-danger"><a href="#"><span class="iconfont">&#xe60b;</span>我的资料</a></div>
-            <div class="col-xs-4 label-success"><a href="#"><span class="iconfont">&#xe609;</span>我的报修</a></div>
-            <div class="col-xs-4 label-primary"><a href="#"><span class="iconfont">&#xe606;</span>报名的活动</a></div>
+            <div class="col-xs-4 label-success"><a href="<?php echo U('myrepair');?>"><span class="iconfont">&#xe609;</span>我的报修</a></div>
+            <div class="col-xs-4 label-primary"><a href="<?php echo U('Member/my_active?uid='.$info['uid']);?>"><span class="iconfont">&#xe606;</span>报名的活动</a></div>
         </div>
         <div class="blank"></div>
         <div>
             <ul class="list-group fuwuList">
-                <li class="list-group-item"><a href="diaochawenjuan.html" class="text-danger"><span class="iconfont">&#xe60a;</span>我的缴费账单</a> </li>
-                <li class="list-group-item"><a href="yezhurenzheng.html" class="text-info"><span class="iconfont">&#xe608;</span>我的物业通知</a></li>
-                <li class="list-group-item"><a href="yezhurenzheng.html" class="text-info"><span class="iconfont">&#xe607;</span>我的水电气使用</a></li>
+                <?php if(is_array($actives)): $i = 0; $__LIST__ = $actives;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$active): $mod = ($i % 2 );++$i;?><li class="list-group-item"><a href="#" class="text-danger"><span class="iconfont">&#xe60a;</span><?php echo ($active["id"]); ?>   活动描述:   <?php echo ($active["description"]); ?>  活动开始时间: <?php echo date('Y-m-d G:i:s',$active['pply_time']);?>    活动结束时间:<?php echo date('Y-m-d G:i:s',$active['deadline']);?>   <?php echo ($active['status']==0?'待审核':'审核通过'); ?></a> </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                <li class="list-group-item"><a href="<?php echo U('Wechat/Wechat/logout');?>" class="text-info"><span class="iconfont">&#xe607;</span>退出登录</a></li>
             </ul>
         </div>
     </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="../jquery-1.11.2.min.js"></script>
+<script src="/Public/Wechat/jquery-1.11.2.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="/Public/Wechat/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -40,14 +40,14 @@ class MemberController extends Controller{
             } else { //注册失败，显示错误信息
                 $this->error($this->showRegError($uid));
             }
-
         } else { //显示注册表单
-            $this->display();
+            $this->display('register');
         }
     }
 
     /* 登录页面 */
     public function login($username = '', $password = '', $verify = ''){
+
         if(IS_POST){ //登录验证
             /* 检测验证码 */
             if(!check_verify($verify)){
@@ -59,14 +59,21 @@ class MemberController extends Controller{
             $user = new UserApi();
             $uid = $user->login($username, $password);
 
+
             if(0 < $uid){ //UC登录成功
                 /* 登录用户 */
                 $Member = D('Member');
                 if($Member->login($uid)){ //登录用户
                     //TODO:跳转到登录前页面
-                    $this->success('登录成功！',U('Wechat/Wechat/index'));
+
+//
+                    $this->success('登录成功！',U('Wechat/Member/my?uid='.$Member->uid));
+
+
+
                 } else {
                     $this->error($Member->getError());
+//
                 }
 
             } else { //登录失败
@@ -103,5 +110,28 @@ class MemberController extends Controller{
             default:  $error = '未知错误';
         }
         return $error;
+    }
+
+
+    public  function my(){
+        if(!is_login()){
+            $this->error('请先登录',U('login'));
+        }
+        $uid=session('user_auth')['uid'];
+
+        $info=M('member')->find($uid);
+        $this->assign('info',$info);
+        $this->display('my');
+
+
+    }
+
+
+    //我的活动
+    public function my_active($uid){
+       $actives = M('active')->where(['uid'=>$uid])->select();
+       $this->assign('actives',$actives);
+        $this->display('my_active');
+
     }
 }

@@ -86,11 +86,11 @@
 
             
 	<div class="main-title">
-		<h2>导航管理</h2>
+		<h2>小区租售</h2>
 	</div>
 
 	<div class="cf">
-		<a class="btn" href="<?php echo U('add','pid='.$pid);?>">新 增</a>
+		<a class="btn" href="<?php echo U('add');?>">新 增</a>
 		<a class="btn" href="javascript:;">删 除</a>
 		<button class="btn list_sort" url="<?php echo U('sort',array('pid'=>I('get.pid',0)),'');?>">排序</button>
 	</div>
@@ -102,26 +102,38 @@
 					<th class="row-selected">
 						<input class="checkbox check-all" type="checkbox">
 					</th>
-					<th>ID</th>
-					<th>导航名称</th>
-					<th>导航地址</th>
-                    <th>排序</th>
+					<th>发布人</th>
+					<th>标题</th>
+					<th>所属分类</th>
+                    <th>描述</th>
+					<th>发布时间</th>
+					<th>截止时间</th>
+					<th>状态</th>
 					<th>操作</th>
 				</tr>
 			</thead>
 			<tbody>
-				<?php if(!empty($list)): if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$channel): $mod = ($i % 2 );++$i;?><tr>
+				<?php if(!empty($list)): if(is_array($activity)): $i = 0; $__LIST__ = $activity;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$activity): $mod = ($i % 2 );++$i;?><tr>
 						<td><input class="ids row-selected" type="checkbox" name="" id="" value="<?php echo ($channel['id']); ?>"> </td>
-						<td><?php echo ($channel["id"]); ?></td>
-						<td><a href="<?php echo U('index?pid='.$channel['id']);?>"><?php echo ($channel["title"]); ?></a></td>
-						<td><?php echo ($channel["url"]); ?></td>
-                        <td><?php echo ($channel["sort"]); ?></td>
+						<td><?php echo ($activity["name"]); ?></td>
+						<td><?php echo ($activity["title"]); ?></td>
+						<td><?php echo ($activity["category_id"]); ?></td>
+						<td><?php echo ($activity["description"]); ?></td>
+						<td><?php echo ($activity["create_time"]); ?></td>
+						<td><?php echo ($activity["deadline"]); ?></td>
+						<td><?php echo ($activity['type']==0?'未发布':'发布'); ?></td>
 						<td>
-							<a title="编辑" href="<?php echo U('edit?id='.$channel['id'].'&pid='.$pid);?>">编辑</a>
-							<a href="<?php echo U('setStatus?ids='.$channel['id'].'&status='.abs(1-$channel['status']));?>" class="ajax-get"><?php echo (show_status_op($channel["status"])); ?></a>
-							<a class="confirm ajax-get" title="删除" href="<?php echo U('del?id='.$channel['id']);?>">删除</a>
+							<a title="编辑" href="<?php echo U('edit?id='.$rental['id']);?>">编辑</a>
+							<a class="confirm ajax-get" title="删除" href="<?php echo U('del?id='.$rental['id']);?>">删除</a>
 						</td>
 					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+					<tr>
+						<td align="right" nowrap="true" colspan="6">
+							<div id="turn-page" class="page">
+								<?php echo ($page); ?>
+							</div>
+						</td>
+					</tr>
 				<?php else: ?>
 				<td colspan="6" class="text-center"> aOh! 暂时还没有内容! </td><?php endif; ?>
 			</tbody>

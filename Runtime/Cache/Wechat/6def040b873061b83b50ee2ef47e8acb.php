@@ -43,20 +43,35 @@
     </nav>
     <!--导航结束-->
 
-    <div class="container-fluid">
-        <?php if(is_array($notice)): $i = 0; $__LIST__ = $notice;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$notice): $mod = ($i % 2 );++$i;?><div class="row noticeList">
-            <a href="<?php echo U('Wechat/notice_detail',array('notice_id'=>$notice['id'],'view'=>$notice['view']));?>">
-            <div class="col-xs-2">
-               <img src="<?php echo ($notice["path"]); ?>">
+    <div class="container">
+        <div class="blank"></div>
+        <div class="row">
+            <div class="col-xs-3">
+                <img src="/Public/Wechat/image/5.png" width="60" height="60" />
             </div>
-            <div class="col-xs-10">
-                <p class="title"><?php echo ($notice["title"]); ?></p>
-                <p class="intro"><?php echo ($notice["description"]); ?></p>
-                <p class="info">浏览: <?php echo ($notice["view"]); ?> <span class="pull-right"><?php echo date('Y-m-d G:i:s',$notice['create_time']);?></span> </p>
+            <div class="col-xs-9">
+                <?php echo ($info["nickname"]); ?><br/>
+                北大花园小区<br/>
+                积分:<span class="text-danger">100</span>
             </div>
-            </a>
-        </div><?php endforeach; endif; else: echo "" ;endif; ?>
+        </div>
+        <div class="blank"></div>
+        <div class="row text-center myLabel">
+            <div class="col-xs-4 label-danger"><a href="#"><span class="iconfont">&#xe60b;</span>我的资料</a></div>
+            <div class="col-xs-4 label-success"><a href="<?php echo U('myrepair');?>"><span class="iconfont">&#xe609;</span>我的报修</a></div>
+            <div class="col-xs-4 label-primary"><a href="<?php echo U('Member/my_active?uid='.$info['uid']);?>"><span class="iconfont">&#xe606;</span>报名的活动</a></div>
+        </div>
+        <div class="blank"></div>
+        <div>
+            <ul class="list-group fuwuList">
+                <li class="list-group-item"><a href="diaochawenjuan.html" class="text-danger"><span class="iconfont">&#xe60a;</span>我的缴费账单</a> </li>
+                <li class="list-group-item"><a href="yezhurenzheng.html" class="text-info"><span class="iconfont">&#xe608;</span>我的物业通知</a></li>
+                <li class="list-group-item"><a href="yezhurenzheng.html" class="text-info"><span class="iconfont">&#xe607;</span>我的水电气使用</a></li>
+                <li class="list-group-item"><a href="<?php echo U('Wechat/Wechat/logout');?>" class="text-info"><span class="iconfont">&#xe607;</span>退出登录</a></li>
+            </ul>
+        </div>
     </div>
+</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="/Public/Wechat/jquery-1.11.2.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

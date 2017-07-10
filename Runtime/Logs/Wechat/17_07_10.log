@@ -1,0 +1,1444 @@
+[ 2017-07-10T00:29:03+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0230s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499617743',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0100s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499617743','Administrator在2017-07-10 00:29登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499531343 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T00:31:38+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T00:31:50+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0080s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499617910',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499617910','Administrator在2017-07-10 00:31登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499531510 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-10T00:31:50+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/my.html
+ERR: 非法操作:my
+
+[ 2017-07-10T00:32:03+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/my.html
+ERR: 非法操作:my
+
+[ 2017-07-10T00:32:17+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0090s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499617937',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0070s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499617937','Administrator在2017-07-10 00:32登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499531537 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T00:34:37+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T00:34:52+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0120s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499618092',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499618092','Administrator在2017-07-10 00:34登录了后台') [ RunTime:0.0030s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499531692 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T00:34:58+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T00:35:07+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T00:35:16+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0130s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499618116',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499618116','Administrator在2017-07-10 00:35登录了后台') [ RunTime:0.0020s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499531716 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T00:36:26+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0090s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499618186',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0100s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499618186','Administrator在2017-07-10 00:36登录了后台') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499531786 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-10T00:36:48+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T00:36:56+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0130s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499618216',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0170s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499618216','Administrator在2017-07-10 00:36登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499531816 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-10T00:38:07+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0110s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499618287',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0100s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499618287','Administrator在2017-07-10 00:38登录了后台') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499531887 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T00:39:10+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T00:39:18+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0120s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499618358',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0120s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499618358','Administrator在2017-07-10 00:39登录了后台') [ RunTime:0.0020s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499531958 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T00:40:41+08:00 ] 127.0.0.1 /index.php/Wechat/Member/my/member/Administrator.html
+ERR: 参数错误或者未定义:uid
+
+[ 2017-07-10T00:41:48+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499618508',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499618508','Administrator在2017-07-10 00:41登录了后台') [ RunTime:0.0020s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499532108 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T00:42:42+08:00 ] 127.0.0.1 /index.php/Wechat/Member/my/uid/1.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:42:44+08:00 ] 127.0.0.1 /index.php/Wechat/Member/my/uid/1.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:42:52+08:00 ] 127.0.0.1 /index.php/Wechat/Member/verify.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:42:54+08:00 ] 127.0.0.1 /index.php/Wechat/Member/verify.html?0.6144371679495058
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:43:27+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0090s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499618607',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499618607','Administrator在2017-07-10 00:43登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499532207 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T00:43:41+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/index.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:44:08+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/rental.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:44:11+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/index
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:44:13+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/rental.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:44:13+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/index.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:44:16+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/index.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:44:41+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0090s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499618681',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499618681','Administrator在2017-07-10 00:44登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499532281 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T00:45:02+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/index.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:45:07+08:00 ] 127.0.0.1 /index.php?s=/Wechat/Wechat/index.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:45:12+08:00 ] 127.0.0.1 /index.php?s=/Wechat/Wechat/index.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:45:15+08:00 ] 127.0.0.1 /index.php?s=/Wechat/Wechat/index.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:45:24+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/index.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:45:27+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/index.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:45:30+08:00 ] 127.0.0.1 /index.php?s=/Wechat/Wechat/index.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:45:37+08:00 ] 127.0.0.1 /index.php?s=/Wechat/Wechat/index.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:45:43+08:00 ] 127.0.0.1 /Wechat/Wechat/index.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:46:07+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/index.html
+ERR: 模板不存在:./Application/Wechat/View/./Application/Wechat/View/Public/error.html.html
+
+[ 2017-07-10T00:48:55+08:00 ] 127.0.0.1 /index.php/Wechat/Member/my.html
+ERR: 参数错误或者未定义:uid
+
+[ 2017-07-10T00:49:06+08:00 ] 127.0.0.1 /index.php/Wechat/Member/my.html
+ERR: 参数错误或者未定义:uid
+
+[ 2017-07-10T00:49:34+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0070s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499618974',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499618974','Administrator在2017-07-10 00:49登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499532574 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T00:51:51+08:00 ] 127.0.0.1 /index.php/Wechat/Member/my.html
+ERR: 参数错误或者未定义:uid
+
+[ 2017-07-10T00:52:24+08:00 ] 127.0.0.1 /index.php/Wechat/Member/my.html
+ERR: 参数错误或者未定义:uid
+
+[ 2017-07-10T00:54:43+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0090s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499619283',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0100s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499619283','Administrator在2017-07-10 00:54登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499532883 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T00:56:56+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499619416',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499619416','Administrator在2017-07-10 00:56登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499533016 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T00:59:07+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-10T00:59:07+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-07-10T00:59:13+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T00:59:18+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0080s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499619558',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499619558','Administrator在2017-07-10 00:59登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499533158 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-10T00:59:50+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0070s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499619590',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0070s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499619590','Administrator在2017-07-10 00:59登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499533190 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T01:00:13+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0080s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499619613',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499619613','Administrator在2017-07-10 01:00登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499533213 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T01:00:31+08:00 ] 127.0.0.1 /index.php/Wechat/Member/index.html
+ERR: 非法操作:index
+
+[ 2017-07-10T01:00:51+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0090s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499619651',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0070s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499619651','Administrator在2017-07-10 01:00登录了后台') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499533251 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T01:02:20+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0090s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499619740',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499619740','Administrator在2017-07-10 01:02登录了后台') [ RunTime:0.0020s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499533340 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T01:02:22+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T01:02:28+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0080s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499619748',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499619748','Administrator在2017-07-10 01:02登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499533348 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-10T01:02:52+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0120s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499619772',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499619772','Administrator在2017-07-10 01:02登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499533372 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-10T01:03:35+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0120s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499619815',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499619815','Administrator在2017-07-10 01:03登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499533415 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-10T01:04:29+08:00 ] 127.0.0.1 /index.php/Wechat/Member/my.html
+ERR: 参数错误或者未定义:uid
+
+[ 2017-07-10T01:04:42+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0080s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499619882',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0070s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499619882','Administrator在2017-07-10 01:04登录了后台') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499533482 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-10T01:09:06+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0080s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499620146',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499620146','Administrator在2017-07-10 01:09登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499533746 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T09:36:54+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0090s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499650614',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499650614','Administrator在2017-07-10 09:36登录了后台') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499564214 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-10T09:38:21+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499650701',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499650701','Administrator在2017-07-10 09:38登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499564301 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T09:40:59+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0080s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499650859',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499650859','Administrator在2017-07-10 09:40登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499564459 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-10T09:41:32+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499650892',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499650892','Administrator在2017-07-10 09:41登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499564492 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T09:54:54+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0090s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499651694',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499651694','Administrator在2017-07-10 09:54登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499565294 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-10T09:55:48+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T09:56:12+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0070s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499651772',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0070s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499651772','Administrator在2017-07-10 09:56登录了后台') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499565372 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-10T09:56:21+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499651781',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499651781','Administrator在2017-07-10 09:56登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499565381 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T10:57:41+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499655461',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0100s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499655461','Administrator在2017-07-10 10:57登录了后台') [ RunTime:0.0020s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499569061 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T10:57:48+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T10:57:57+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0130s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499655477',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0120s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499655477','Administrator在2017-07-10 10:57登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499569077 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T10:58:50+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T10:58:58+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-10T10:59:06+08:00 ] 127.0.0.1 /index.php/Wechat/Member/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499655546',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0080s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499655546','Administrator在2017-07-10 10:59登录了后台') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\server\apache\htdocs\onethink-master\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499569146 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-07-10T11:07:03+08:00 ] 127.0.0.1 /index.php/Wechat/Member/my_active/uid/1.html
+ERR: 模板不存在:./Application/Wechat/View/Member/my_active.html
+
+[ 2017-07-10T11:39:49+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Shop_activity
+
+[ 2017-07-10T11:40:14+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T11:41:26+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T11:41:30+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-10T11:41:47+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T11:41:54+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-10T11:42:00+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-07-10T11:43:19+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658199 ) LIMIT 0,1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T11:43:37+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658217 ) LIMIT 0,2   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T11:43:48+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658228 ) LIMIT 0,1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T11:45:14+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658314 ) LIMIT 0,2   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T11:45:14+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658314 ) LIMIT 0,2   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-10T11:45:23+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658323 ) LIMIT 0,1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-10T11:48:01+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658481 ) LIMIT 2,1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 81 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T11:48:34+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658514 ) LIMIT 3,1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 81 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T11:49:12+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658552 ) LIMIT 2,1   [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 81 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T11:49:38+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658578 ) LIMIT 2,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T11:49:57+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658597 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T11:50:30+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658630 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T11:50:55+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658655 ) LIMIT 1,1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T11:51:55+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658715 ) LIMIT 1,1   [ RunTime:0.0000s ]
+
+[ 2017-07-10T11:56:02+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658962 ) LIMIT 1,1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T11:56:17+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658977 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T11:56:18+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658978 ) LIMIT 2,1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T11:56:33+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658993 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T11:56:38+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658998 ) LIMIT 1,1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T11:56:39+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499658999 ) LIMIT 2,1   [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T11:56:52+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659012 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T11:57:06+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659026 ) LIMIT 2,1   [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T11:57:08+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659028 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T11:58:47+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659127 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T12:00:33+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659233 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T12:00:33+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659233 ) LIMIT 2,1   [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T12:00:34+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659234 ) LIMIT 3,1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T12:00:56+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659256 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T12:00:57+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659257 ) LIMIT 2,1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T12:00:57+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659257 ) LIMIT 3,1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T12:01:14+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659274 ) LIMIT 1,1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T12:01:15+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659275 ) LIMIT 2,1   [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T12:01:15+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659275 ) LIMIT 3,1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T12:01:21+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659281 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T12:01:45+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659305 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T12:02:06+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659326 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T12:03:00+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659380 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T12:03:23+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659403 ) LIMIT 2,1   [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T12:03:38+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659418 ) LIMIT 1,1   [ RunTime:0.0000s ]
+
+[ 2017-07-10T12:03:39+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659419 ) LIMIT 2,1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T12:04:09+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659449 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T12:04:10+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659450 ) LIMIT 2,1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T12:06:41+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659601 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T12:06:52+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499659612 ) LIMIT 2,1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T13:01:20+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499662880 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T13:01:34+08:00 ] 127.0.0.1 /wechat.php?s=/Wechat/Wechat/
+ERR: 非法操作:Wechat
+
+[ 2017-07-10T13:01:37+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499662897 ) LIMIT 1,1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T13:01:40+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499662900 ) LIMIT 1,1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T13:04:21+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499663061 ) LIMIT 1,1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T13:04:22+08:00 ] 127.0.0.1 /wechat.php?s=/Wechat/Wechat/shop_detail?shop_id=
+ERR: 非法操作:Wechat
+
+[ 2017-07-10T13:04:41+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499663081 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T13:04:42+08:00 ] 127.0.0.1 /wechat.php?s=/Wechat/Wechat/shop_detail?shop_id=
+ERR: 非法操作:Wechat
+
+[ 2017-07-10T13:04:45+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499663085 ) LIMIT 1,1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T13:05:23+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499663123 ) LIMIT 1,1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T13:05:26+08:00 ] 127.0.0.1 /wechat.php?s=/Wechat/Wechat/shop_detail?shop_id=
+ERR: 非法操作:Wechat
+
+[ 2017-07-10T13:06:10+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499663170 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T13:06:10+08:00 ] 127.0.0.1 /index.php?s=/Wechat/Wechat/shop_detail?shop_id=
+ERR: 非法操作:shop_detail?shop_id=
+
+[ 2017-07-10T14:00:49+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499666449 ) LIMIT 1,1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T14:00:54+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499666454 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T15:57:09+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499673429 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T15:57:10+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499673430 ) LIMIT 2,1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T16:05:26+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499673926 ) LIMIT 1,1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T16:08:34+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499674114 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T16:08:38+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499674118 ) LIMIT 1,1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T16:09:05+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499674145 ) LIMIT 1,1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T16:09:17+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499674157 ) LIMIT 2,1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T16:09:25+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499674165 ) LIMIT 1,1   [ RunTime:0.0030s ]
+
+[ 2017-07-10T16:10:17+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499674217 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T16:10:18+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/Wechat/shop_detail/shop_id/7
+ERR: 非法操作:Wechat
+
+[ 2017-07-10T16:10:36+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/Wechat/shop_detail/shop_id/7
+ERR: 非法操作:Wechat
+
+[ 2017-07-10T16:10:40+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499674240 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T16:22:12+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499674932 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T16:22:14+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499674934 ) LIMIT 1,1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T16:22:20+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499674940 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T16:23:51+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499675031 ) LIMIT 1,1   [ RunTime:0.0030s ]
+
+[ 2017-07-10T16:23:54+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499675034 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T16:26:04+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499675164 ) LIMIT 1,1   [ RunTime:0.0020s ]
+
+[ 2017-07-10T16:26:07+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499675167 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T16:26:34+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499675194 ) LIMIT 1,1   [ RunTime:0.0010s ]
+
+[ 2017-07-10T16:26:35+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499675195 ) LIMIT 2,1   [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::ajaxReturn(), called in D:\server\apache\htdocs\onethink-master\wwwroot\Application\Wechat\Controller\WechatController.class.php on line 82 and defined D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 227 行.
+NOTIC: [8] Undefined variable: data D:\server\apache\htdocs\onethink-master\wwwroot\ThinkPHP\Library\Think\Controller.class.php 第 237 行.
+
+[ 2017-07-10T16:30:06+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/online.html
+ERR: 非法操作:online
+
+[ 2017-07-10T16:30:11+08:00 ] 127.0.0.1 /wchat.php?s=/Wechat/Wechat/shop_activity/p/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `onethink_document` INNER JOIN onethink_picture ON onethink_document.cover_id=onethink_picture.id INNER JOIN onethink_document_article ON onethink_document_article.id=onethink_document.id  WHERE ( category_id=41 AND deadline>1499675411 ) LIMIT 1,1   [ RunTime:0.0030s ]
+
+[ 2017-07-10T16:30:18+08:00 ] 127.0.0.1 /index.php/Wechat/Wechat/online.html
+ERR: 非法操作:online
+

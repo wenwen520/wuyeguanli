@@ -1,0 +1,190 @@
+<extend name="Public/base" />
+
+<!-- 内容区 -->
+<block name="body">
+    <div id="main-content">
+        <div id="top-alert" class="fixed alert alert-error" style="display: none;">
+            <button class="close fixed" style="margin-top: 4px;">&times;</button>
+            <div class="alert-content">这是内容</div>
+        </div>
+        <div id="main" class="main">
+
+            <!-- nav -->
+            <!-- nav -->
+
+
+
+            <script type="text/javascript" src="/Public/static/uploadify/jquery.uploadify.min.js"></script>
+            <div class="main-title cf">
+                <h2>
+                    添加小区活动
+                </h2>
+            </div>
+
+            <div class="tab-wrap">
+                <div class="tab-content">
+                    <!-- 表单 -->
+                    <form  action="{:U()}" method="post" class="form-horizontal">
+                        <!-- 基础文档模型 -->
+                        <input type="hidden" name="id" value="{$data.id}" />
+                        <div id="tab1" class="tab-pane tab1 in">
+                            <div class="form-item cf">
+                                <label class="item-label">发布人姓名</label>
+                                <div class="controls">
+                                    <input type="text" class="text input-large" name="name" value="{$data.name}">
+                                </div>
+                            </div>
+                            <div class="form-item cf">
+                                <label class="item-label">标题</label>
+                                <div class="controls">
+                                    <input type="text" class="text input-large" name="title" value="{$data.title}">
+                                </div>
+                            </div>
+                            <div class="form-item cf">
+                                <label class="item-label">描述</label>
+                                <div class="controls">
+                                    <input type="text" class="text input-large" name="description" value="{$data.description}">&nbsp;
+                                </div>
+                            </div>
+                            <div class="form-item cf">
+                                <label class="item-label">图片</label>
+                                <div class="controls">
+                                    <input type="file" id="upload_picture_path">
+                                    <input type="hidden" name="path" id="cover_id_path" value="{$date.path}"/>
+                                    <div class="upload-img-box"><img src="{$data.path}">
+                                    </div>
+                                </div>
+                                <script type="text/javascript">
+                                    //上传图片
+                                    /* 初始化上传插件 */
+                                    $("#upload_picture_path").uploadify({
+                                        "height": 30,
+                                        "swf": "__STATIC__/uploadify/uploadify.swf",
+                                        "fileObjName": "download",
+                                        "buttonText": "上传图片",
+                                        "uploader": "{:U('File/uploadPicture',array('session_id'=>session_id()))}",
+                                        "width": 120,
+                                        'removeTimeout': 1,
+                                        'fileTypeExts': '*.jpg; *.png; *.gif;',
+                                        "onUploadSuccess": uploadPicturepath,
+                                        'onFallback': function () {
+                                            alert('未检测到兼容版本的Flash.');
+                                        }
+                                    });
+                                    function uploadPicturepath(file, data) {
+                                        var data = $.parseJSON(data);
+                                        var src = '';
+                                        if (data.status) {
+                                            $("#cover_id_path").val(data.path);
+                                            src = data.url || '' + data.path
+                                            $("#cover_id_path").parent().find('.upload-img-box').html(
+                                                    '<div class="upload-pre-item"><img src="' + src + '"/></div>'
+                                            );
+                                        } else {
+                                            updateAlert(data.info);
+                                            setTimeout(function () {
+                                                $('#top-alert').find('button').click();
+                                                $(that).removeClass('disabled').prop('disabled', false);
+                                            }, 1500);
+                                        }
+                                    }
+                                </script>
+                                <label class="item-label">内容<span class="check-tips"></span></label>
+                                <div class="controls">
+                                    <label class="textarea">
+                                        <textarea name="content">{$data.content}</textarea>
+                                        <input type="hidden" name="parse" value="0">
+                                        <link rel="stylesheet" href="/Public/static/kindeditor/default/default.css" />
+                                        <script charset="utf-8" src="/Public/static/kindeditor/kindeditor-min.js"></script>
+                                        <script charset="utf-8" src="/Public/static/kindeditor/zh_CN.js"></script>
+                                        <script type="text/javascript">
+                                            var editor_content;
+                                            KindEditor.ready(function(K) {
+                                                editor_content = K.create('textarea[name="content"]', {
+                                                    allowFileManager : false,
+                                                    themesPath: K.basePath,
+                                                    width: '100%',
+                                                    height: '500px',
+                                                    resizeType: 1,
+                                                    pasteType : 2,
+                                                    urlType : 'absolute',
+                                                    fileManagerJson : '/admin.php/Sale/fileManagerJson.html',
+                                                    //uploadJson : '/admin.php/Sale/uploadJson.html' }
+                                                    uploadJson : '/admin.php/Addons/execute/_addons/EditorForAdmin/_controller/Upload/_action/ke_upimg.html',
+                                                    extraFileUploadParams: {
+                                                        session_id : 'k935eqfnr1j9ub01ghpusfi3p6'
+                                                    }
+                                                });
+                                            });
+
+                                            $(function(){
+                                                //传统表单提交同步
+                                                $('textarea[name="content"]').closest('form').submit(function(){
+                                                    editor_content.sync();
+                                                });
+                                                //ajax提交之前同步
+                                                $('button[type="submit"],#submit,.ajax-post,#autoSave').click(function(){
+                                                    editor_content.sync();
+                                                });
+                                            })
+                                        </script>
+                                    </label>
+                                </div>
+                                <div class="form-item cf">
+                                    <label class="item-label">发布日期：</label>
+                                    <div class="controls">
+                                        <input type="text" class="text time" name="create_time" value="{$data.create_time}"></div>
+                                </div>
+                                <div class="form-item cf">
+                                    <label class="item-label">截止日期：</label>
+                                    <div class="controls">
+                                        <input type="text" class="text time" name="deadline" value="{$data.deadline}"></div>
+                                </div>
+                            </div>
+                            <div class="form-item cf">
+                                <button class="btn submit-btn ajax-post hidden" id="submit" type="submit" target-form="form-horizontal">确 定
+                                </button>
+                                <a class="btn btn-return" href="/index.php?s=/Admin/Sale/index.html">返 回</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <link href="/Public/static/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+
+    <link href="/Public/static/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">
+    <link href="/Public/static/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/Public/static/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="/Public/static/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"
+            charset="UTF-8"></script>
+
+    <script type="text/javascript">
+
+
+
+        $(function(){
+            $('.date').datetimepicker({
+                format: 'yyyy-mm-dd',
+                language:"zh-CN",
+                minView:2,
+                autoclose:true
+            });
+            $('.time').datetimepicker({
+                format: 'yyyy-mm-dd hh:ii',
+                language:"zh-CN",
+                minView:2,
+                autoclose:true
+            });
+            showTab();
+            highlight_subnav('/admin.php/Sale/index.html');
+
+        });
+    </script>
+
+</block>
